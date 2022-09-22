@@ -1,0 +1,14 @@
+prefix=/home/yousixia/project/compile_rk_libs/rootfs/usr/local
+exec_prefix=${prefix}
+libdir=/home/yousixia/project/compile_rk_libs/rootfs/usr/local/lib
+includedir=/home/yousixia/project/compile_rk_libs/rootfs/usr/local/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 58.134.100
+Requires: libswresample >= 3.9.100, libavutil >= 56.70.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavcodec -pthread -lm
+Libs.private: 
+Cflags: -I${includedir}
