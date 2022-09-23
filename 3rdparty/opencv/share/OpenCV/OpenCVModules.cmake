@@ -165,7 +165,7 @@ set_target_properties(opencv_shape PROPERTIES
 add_library(opencv_videoio STATIC IMPORTED)
 
 set_target_properties(opencv_videoio PROPERTIES
-  INTERFACE_LINK_LIBRARIES "opencv_core;opencv_imgproc;opencv_imgcodecs;opencv_core;opencv_imgproc;opencv_imgcodecs;\$<LINK_ONLY:dl>;\$<LINK_ONLY:m>;\$<LINK_ONLY:pthread>;\$<LINK_ONLY:rt>;\$<LINK_ONLY:tegra_hal>;/home/yousixia/project/compile_rk_libs/rootfs/usr/local/lib/libavformat.a;\$<LINK_ONLY:m>;/home/yousixia/project/compile_rk_libs/rootfs/usr/local/lib/libavcodec.a;/home/yousixia/project/compile_rk_libs/rootfs/usr/local/lib/libswresample.a;/home/yousixia/project/compile_rk_libs/rootfs/usr/local/lib/libswscale.a;/home/yousixia/project/compile_rk_libs/rootfs/usr/local/lib/libavutil.a"
+  INTERFACE_LINK_LIBRARIES "opencv_core;opencv_imgproc;opencv_imgcodecs;opencv_core;opencv_imgproc;opencv_imgcodecs;\$<LINK_ONLY:dl>;\$<LINK_ONLY:m>;\$<LINK_ONLY:pthread>;\$<LINK_ONLY:rt>;\$<LINK_ONLY:tegra_hal>;/home/yousixia/project/rkinfercpp/3rdparty/opencv/lib/libavformat.a;\$<LINK_ONLY:m>;/home/yousixia/project/rkinfercpp/3rdparty/opencv/lib/libavcodec.a;/home/yousixia/project/rkinfercpp/3rdparty/opencv/lib/libswresample.a;/home/yousixia/project/rkinfercpp/3rdparty/opencv/lib/libswscale.a;/home/yousixia/project/rkinfercpp/3rdparty/opencv/lib/libavutil.a"
 )
 
 # Create imported target opencv_calib3d

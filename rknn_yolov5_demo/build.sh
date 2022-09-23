@@ -14,7 +14,6 @@ RV1109_TOOL_CHAIN=/home/yousixia/project/rkinfercpp/prebuilts/gcc/linux-x86/arm/
 GCC_COMPILER=${RV1109_TOOL_CHAIN}/bin/arm-linux-gnueabihf
 
 ROOT_PWD=$( cd "$( dirname $0 )" && cd -P "$( dirname "$SOURCE" )" && pwd )
-
 # build rockx
 BUILD_DIR=${ROOT_PWD}/build
 
@@ -30,5 +29,6 @@ make -j4
 make install
 cd -
 
-cp run_rv1109_rv1126.sh install/rknn_yolov5_demo/
+cp run_rv1109_rv1126_image.sh install/rknn_yolov5_demo/
 cp run_rv1109_rv1126_video.sh install/rknn_yolov5_demo/
+cp run_rv1109_rv1126_dir.sh install/rknn_yolov5_demo/

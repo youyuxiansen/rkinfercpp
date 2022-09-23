@@ -42,6 +42,8 @@ add_executable(rknn_yolov5_demo
         src/rga_func.c
         src/postprocess.cc
         src/VideoProcessor.cpp
+        src/utils.cpp
+        src/media.cpp
         src/main.cc
         )
 
